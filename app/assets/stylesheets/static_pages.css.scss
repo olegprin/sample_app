@@ -1,4 +1,3 @@
-
 @import "bootstrap";
 
 html {
@@ -25,8 +24,6 @@ textarea {
   margin-bottom: 10px;
 }
 
-/* typography */
-
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
@@ -39,18 +36,19 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.7em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #999;
+  color: #979;
 }
 
 p {
   font-size: 1.1em;
-  line-height: 1.7em;
+  line-height: 1.7cm;
 }
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -64,10 +62,34 @@ p {
 }
 
 #logo:hover {
-  color: #fff;
+  color: #999;
   text-decoration: none;
 }
-$grayMediumLight: #eaeaea;
+
+footer {
+  margin-top: 45px;
+  padding-top: 10px;
+  border-top: 1px solid black;
+  color: #945;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 25px;
+}
 
 @mixin box_sizing {
   -moz-box-sizing: border-box;
@@ -82,10 +104,11 @@ $grayMediumLight: #eaeaea;
   margin-top: 45px;
   @include box_sizing;
 }
+
 aside {
   section {
     padding: 10px 0;
-    border-top: 1px solid $grayLighter;
+    border-top: 1px solid #eaeaea;
     &:first-child {
       border: 0;
       padding-top: 0;
@@ -96,11 +119,10 @@ aside {
       line-height: 1;
     }
     h1 {
-      font-size: 1.4em;
+      font-size: 1.6em;
       text-align: left;
       letter-spacing: -1px;
       margin-bottom: 3px;
-      margin-top: 0px;
     }
   }
 }
@@ -113,16 +135,14 @@ aside {
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
+  padding: 10px;
+  height: auto;
   margin-bottom: 15px;
   @include box_sizing;
 }
 
-input {
-  height: auto !important;
-}
-
 #error_explanation {
-  color: #f00;
+  color:#f00;
   ul {
     list-style: none;
     margin: 0 0 18px 0;
@@ -132,4 +152,99 @@ input {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+ }
+ 
+ .users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    &:last-child {
+      border-bottom: 1px solid #eaeaea;
+    }
+  }
+}
+
+.microposts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+  }
+}
+.content {
+  display: block;
+}
+.timestamp {
+  color: #eaeaea;
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+.stats {
+  overflow: auto;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid #eaeaea;
+    color: gray;
+    &:first-child {   
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  martin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+/* microposts */
+
+.microposts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+}
+.content {
+  display: block;
+}
+.timestamp {
+  color: $grayLight;
+}
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
 }
