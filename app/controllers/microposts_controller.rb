@@ -1,6 +1,6 @@
 class MicropostsController < ApplicationController
-  #before_action :signed_in_user, only: [:create, :destroy, :edit, :update]
-  #before_action :correct_user,   only: [:destroy, :edit, :update]
+ # before_action :signed_in_user, only: [:create, :destroy, :edit, :update]
+ # before_action :correct_user,   only: [:destroy, :edit, :update]
 
   def create
     @micropost = current_user.microposts.build(micropost_params)
@@ -23,7 +23,7 @@ class MicropostsController < ApplicationController
       flash[:success] = "Profile updated"
       redirect_to edit_micropost_path
     else
-      render edit_micropost_path
+      render 'root_url'
     end
   end
   
