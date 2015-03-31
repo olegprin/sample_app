@@ -11,6 +11,22 @@ class StaticPagesController < ApplicationController
   end
   def contact
   end
+  
   def about
   end
+
+def help
+  end
+
+ def about
+  end
+   def news
+  end 
+  def contact
+  end 
+  def lawyers
+  end
+
+
+
 end
