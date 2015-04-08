@@ -1,15 +1,15 @@
-<div class="row">
+<p class="ex">
   <div class="span6 offset3">
-    <%= form_for(@micropost) do |f| %>
+   <%= form_for(@micropost) do |f| %>
    
 
       <%= f.label :name %>
       <%= f.text_field :content %>
- <%= f.submit "Save changes", class: "btn btn-large btn-primary" %>
-    <% end %>
+     </a>
 
 
+   </p>
 
-     
-    </div>
-  </div>
+ <a class="btn"> <%= f.submit "Save changes"%></a>
+    
+  <% end %>  </div>

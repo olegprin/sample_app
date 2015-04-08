@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  padding-top: 6px;
+  padding-top: 60px;
 }
 
 section {
@@ -209,7 +209,7 @@ aside {
 
 .user_avatars {
   overflow: auto;
-  martin-top: 100px;
+  martin-top: 50px;
   .gravatar {
     margin: 1px 1px;
   }
@@ -329,7 +329,7 @@ img {
 .frame1, .frame2, .frame3, .frame4, .frame5, .news > li {
   background: url(../images/frames.png) no-repeat;
 }
-.more, .subscribe, input[type='submit'] {
+.more, .subscribe {
   background-position: -107px 0;
   color: #fff;
   display: inline-block;
@@ -344,15 +344,8 @@ img {
 .more:hover {
   background-position: 0 0;
 }
-.subscribe, input[type='submit'] {
-  background-position: -222px -38px;
-  height: 38px;
-  line-height: 38px;
-  width: 212px;
-}
-.subscribe:hover, input[type='submit']:hover {
-  background-position: 0 -38px;
-}
+
+
 .home, .phone, .mail, .fax {
   background-position: 0 1px;
   padding-left: 24px;
@@ -431,6 +424,7 @@ h1 {
   font: 29px/30px "Times New Roman", Times, serif;
   margin: 0 0 12px;
   text-transform: uppercase;
+
 }
 h2 {
   color: #626262;
@@ -776,10 +770,7 @@ p a:hover {
   overflow: auto;
   resize: none;
 }
-.message input[type='submit'] {
-  cursor: pointer;
-  border: none;
-}
+
 /*------------ FOOTER ------------*/
 #footer {
   background: #d9d9d9 url(../images/bg-footer.png) repeat-x left top;
@@ -844,4 +835,36 @@ p a:hover {
 }
 #footnote .connect a.pinterest {
   background-position: 0 -196px;
+}
+
+
+
+
+
+a.btn {
+display: block; width: 150px; height: 60px; padding: 20px 0 0 0; margin: 0 auto;
+
+background: #398525; /* old browsers */
+background: -moz-linear-gradient(top, #8DD297 0%, #398525 50%); /* firefox */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8DD297), color-stop(100%,#398525)); /* webkit */
+
+box-shadow: inset 0px 0px 6px #fff;
+-webkit-box-shadow: inset 0px 0px 6px #fff;
+border: 1px solid #5ea617;
+border-radius: 10px;
+}
+
+
+h1.po
+{
+  
+  margin-top: 500 px;
+}
+
+
+p.strong
+{
+  
+  margin-top: 500 px;
+
 }
